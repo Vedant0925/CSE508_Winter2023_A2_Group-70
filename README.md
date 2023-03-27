@@ -30,6 +30,10 @@ The log normalisation scheme helps to reduce the effect of longer documents by t
 
 A double normalisation scheme further reduces the impact of longer documents by dividing the term frequency by the maximum term frequency of any term in the document. It is useful when we want to emphasise the most critical terms in the document.But it does not take in account of the document frequency.
 
+Jaccard Coefficient
+This function determines the Jaccard coefficient between the tokens in the query and each document using a list of documents represented as sentences and a query string. The Jaccard coefficient, which is calculated by dividing the size of two sets, intersection by their union, calculates how similar they are. The top 10 most comparable docs are then returned after the code ranksthe documents according to their Jaccard coefficient.
+
+
 
 Question 2:
 This was the Accuracy and precision before using N-grams to improve the classifier. 
